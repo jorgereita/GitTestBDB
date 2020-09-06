@@ -5,20 +5,57 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Welcome TEST BDB </header>
-    <aside>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere, consectetur soluta id consequuntur delectus molestias! Laborum minus maxime cupiditate voluptatum hic ipsam veniam, dicta corrupti tempora quos, eius quaerat?
-    </aside>
-    
-    <footer>
-        Made with °=[{^^}]=/
-
-    </footer>
+    <header><h1 contenteditable>REITA.com</h1></header>
+    <div class="left-sidebar" contenteditable>Left Sidebar</div>
+    <main contenteditable></main>
+    <div class="right-sidebar" contenteditable>Right Sidebar</div>
+    <footer contenteditable>Footer Content — for BDB  2020 Sep Test</footer>
 </body>
 <style>
-    .body{
-        background: rgb(91, 91, 168);
-        color:aliceblue;
-    }
+    
+    body {
+  display: grid;
+  height: 100vh;
+  grid-template: auto 1fr auto / auto 1fr auto
+}
+
+// etc
+
+header {
+  background: lightpink;
+  padding: 2rem;
+  grid-column: 1 / 4;
+}
+
+.left-sidebar {
+  background: lightblue;
+  grid-column: 1 / 2;
+}
+
+main {
+  background: coral;
+  grid-column: 2 / 3;
+}
+
+.right-sidebar {
+  background: yellow;
+  grid-column: 3 / 4;
+}
+
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
 </style>
 </html>
